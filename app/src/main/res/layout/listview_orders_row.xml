@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:minHeight="100dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="start|center_vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:minHeight="80dp"
+            android:minWidth="80dp"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            >
+
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/iv_CustomerOrderRowProductPicture"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:padding="4dp"-->
+                <!--/>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:gravity="start|center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/almersal_darkgrey"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowProductDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/almersal_darkgrey"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowProductItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/almersal_lightgrey"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowProductDeliveryPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:gravity="start|center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:maxLines="1"
+                android:textColor="@color/almersal_lightgrey"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/almersal_lightgrey"
+                android:gravity="start|center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_CustomerOrderRowTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:textColor="@color/almersal_darkgrey"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start|center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:textColor="@color/almersal_darkgrey"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="start|center_vertical"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_OrderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:maxLines="1"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/almersal_darkgrey"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".6"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_CustomerOrderRowMore"
+                android:scaleType="centerInside"
+                android:src="@drawable/common_full_open_on_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "598076234760",
+    "project_id": "mersalordergenerator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598076234760:android:ae89f33dc08976da",
+        "android_client_info": {
+          "package_name": "com.evosys.mersalordergenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598076234760-1fvc3nghe5d033o74pklfbksip1um878.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeHMyQEt6W4HW2YyCR9pW8nPCGhY_IN38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

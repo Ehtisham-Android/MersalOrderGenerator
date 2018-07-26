@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="230dp"
+    android:layout_height="230dp"
+    android:weightSum="1">
+
+
+    <com.evosys.customfonts.TextView_FuturaBook
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/str_PleaseEnableAllPermissions"
+        android:id="@+id/textView"
+        android:textColor="@color/White"
+        android:background="@null"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_weight=".5"
+        >
+
+        <com.evosys.customfonts.Button_FuturaHeavy
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_exit"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/btn_dialog_exit"
+            />
+
+        <com.evosys.customfonts.Button_FuturaHeavy
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_settings"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/btn_dialog_settings"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,615 @@
+<resources>
+    <string name="app_name">MersalOrderGenerator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!--<string name="google_api_key">AIzaSyBF1H1cz31bfzCYIsfWyBH4-fCYKQTsjvA</string>-->
+    <string-array name="navigation_drawer_items_array">
+        <item>Mersal</item>
+        <item>Mersal</item>
+        <item>Mersal</item>
+        <item>Mersal</item>
+        <item>Mersal</item>
+        <item>Mersal</item>
+        <item>Mersal</item>
+
+    </string-array>
+
+    <!--<string name="facebook_app_id">1767746286782648</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="strLoginYourself">Login Yourself!</string>
+    <string name="strUsername">E-mail</string>
+    <string name="strPassword">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="google_app_id">259893046426</string>-->
+
+    <string name="title_activity_start">Muwassilati</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="str_unblock">Unblock</string>
+
+    <!-- customer order summary -->
+    <string name="str_shareFB">Rate and Share on Facebook</string>
+    <string name="str_shareTwitter">Rate and Share on Twitter</string>
+    <string name="str_not_recieved">Not Recieved</string>
+
+    <!-- fragment_create_new_driver -->
+    <string name="str_fragment_create_new_driver_et_DriverFullName">Full name</string>
+    <string name="str_fragment_create_new_driver_et_DriverUserName">User name</string>
+    <string name="str_fragment_create_new_driver_et_DriverPassword">Password</string>
+    <string name="str_fragment_create_new_driver_et_DriverConfirmPassword">Confirm password</string>
+    <string name="str_fragment_create_new_driver_et_DriverEmail">E-mail</string>
+    <string name="str_fragment_create_new_driver_et_DriverPhoneNum">Mobile number</string>
+    <string name="str_fragment_create_new_driver_et_966">+966</string>
+    <string name="str_fragment_create_new_driver_et_DriverPlateNum">Car plate number</string>
+    <string name="str_fragment_create_new_driver_et_DriverIDnum">ID number</string>
+
+    <string name="str_fragment_create_new_driver_btn_DriverProfilePic">Profile Pic</string>
+    <string name="str_fragment_create_new_driver_btn_DriverCarPic">+\nCar photo</string>
+    <string name="str_fragment_create_new_driver_btn_DriverIDPic">+\nID photo</string>
+    <string name="str_fragment_create_new_driver_btn_DriverLicensePic">+\nLicense Photo</string>
+    <string name="str_fragment_create_new_driver_btn_DriverRegisterYourself">Sign up</string>
+
+    <string name="str_fragment_create_new_driver_AddPhoto">Add photo</string>
+    <string name="str_fragment_create_new_driver_btn_TakePhoto">Camera</string>
+    <string name="str_fragment_create_new_driver_btn_ChooseFromGallery">Choose from gallery</string>
+
+
+    <!-- fragment_create_new_user -->
+    <string name="str_fragment_create_new_user_et_CustomerFullName">Full name</string>
+    <string name="str_fragment_create_new_user_et_CustomerUserName">User name</string>
+    <string name="str_fragment_create_new_user_et_CustomerEmail">E-mail</string>
+    <string name="str_fragment_create_new_user_et_CustomerPassword">Password</string>
+    <string name="str_fragment_create_new_user_et_CustomerConfirmPassword">Confirm password</string>
+    <string name="str_fragment_create_new_user_et_CustomerPhone">Mobile number</string>
+    <string name="str_fragment_create_new_user_btn_RegisterYourself">Register</string>
+
+
+    <!-- fragment_customer_order_sumary -->
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductDetailsTitle">ORDER DETAILS</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductName">Order name</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductItemPrice">Item(s) price</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductDeliveryPrice">Deliverey price</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductTotalPrice">Total price</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductStatus">Order Status</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductCategory">Category</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryDriverDetailsTitle">Driver Details</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryDriverName">Driver name</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryDriverPhone">Driver mob.</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerOrderSummaryProductDriverRating">Rating</string>
+    <string name="str_f_customer_order_sumary_btn_CustomerOrderSumaryScreenCallDriver">Call</string>
+    <string name="str_f_customer_order_sumary_btn_CloseCustomerOrderSumaryScreen">Go back</string>
+    <string name="str_f_customer_order_sumary_tv_CustomerSummaryPrice"></string>
+    <string name="str_f_customer_order_sumary_tv_SummaryOrderStatus">Your order has been delivered.</string>
+    <string name="str_f_customer_order_sumary_tv_RateDriverTitle">Please rate this driver</string>
+    <string name="str_f_customer_order_sumary_btn_CustomerOrderRecieved">Recieved</string>
+
+
+    <!-- fragment_driver_order_screen -->
+    <string name="str_f_driver_order_screen_tv_DriverOrdersWelcomeName">Welcome</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrdersScreenDriverMobileNum"></string>
+    <string name="str_f_driver_order_screen_tv_DriverOrdersScreenDriverRateCount"></string>
+    <string name="str_f_driver_order_screen_sw_DriverOrdersScreenDriverOnlineOffline">Online</string>
+    <string name="str_f_driver_order_screen_sw_DriverOrdersScreenDriverOffline">Offline</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenDriverOrdersHistory">History</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenDriverSettings">Settings</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenDriverOrdersList">List view</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenDriverMapView">Map view</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenShowCurrentOrders">Show Orders</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenShowCurrentDrivers">Show Drivers</string>
+
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenPicked">Item Picked</string>
+    <string name="str_f_driver_order_screen_btn_DriverOrdersScreenDelivered">Delivered</string>
+
+
+    <!-- fragment_driver_single_order_info -->
+    <string name="str_f_driver_order_screen_tv_DriverOrderTitle">ORDER NEED APPROVAL</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderProductName"></string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderProductDetails">Order details</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderProductPrice">Item(s) price</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderProductDelieveryPrice">abc</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderProductTotalPrice">abc</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderSourceLocation"></string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderDestinationLocation"></string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderCategory">abc</string>
+    <string name="str_f_driver_order_screen_tv_DriverOrderStatus"></string>
+    <string name="str_f_driver_order_screen_btn_AcceptOrderProposal">Accept</string>
+
+    <string name="str_f_driver_order_screen_btn_DismissOrderDialog">Dismiss</string>
+    <string name="str_btn_DiscardOrder">Discard</string>
+
+
+    <!-- fragment_forgot_password -->
+    <string name="str_f_forgot_password_et_ForgotPasswordEmail">Enter registered email</string>
+    <string name="str_f_forgot_password_btn_GetEmailCode">Send</string>
+
+    <!-- fragment_upload_video -->
+    <string name="str_f_upload_video_template1">My name is</string>
+    <string name="str_f_upload_video_template2">Current date is</string>
+    <string name="str_f_upload_video_template3">My ID number is</string>
+    <string name="str_f_upload_video_btn_startrecordingvdo">Start Recording Video</string>
+    <string name="str_f_upload_video_btn_stop">Stop</string>
+    <string name="str_f_upload_video_btn_uploadvdo">Upload Video</string>
+    <string name="str_f_upload_video_btn_recordagain">Record Again</string>
+
+
+    <!-- fragment_login -->
+    <string name="str_f_login_et_username">Username</string>
+    <string name="str_f_login_et_password">Password</string>
+    <string name="str_f_login_btnLogin">Login</string>
+    <string name="str_f_login_btn_ForgotPassword">Forgot Password?</string>
+    <string name="str_f_login_btn_CreateNewUserDriver">New Driver</string>
+    <string name="str_f_login_btn_CreateNewUserMersal">Register new mersal</string>
+    <string name="str_f_login_btn_CreateNewUserCustomer">New Customer</string>
+
+
+    <!-- fragment_review_orders -->
+    <string name="str_f_review_orders_btn_addOrder">+ Add Order</string>
+    <string name="str_f_review_orders_tv_ReviewOrdersIncreaseItemPriceTitle">Please increase Item Price</string>
+    <string name="str_f_review_orders_tv_ReviewOrdersIncreaseDeliveryPriceTitle">Please increase Delivery Price</string>
+    <string name="str_f_review_orders_tv_orderProductName"></string>
+    <string name="str_f_review_orders_tv_orderProductDetails"></string>
+    <string name="str_f_review_orders_tv_orderProductPrice"></string>
+    <string name="str_f_review_orders_tv_orderProductDelieveryPrice"></string>
+    <string name="str_f_review_orders_tv_orderProductTotalPrice"></string>
+    <string name="str_f_review_orders_tv_orderSourceLocation"></string>
+    <string name="str_f_review_orders_tv_orderDestinationLocation"></string>
+    <string name="str_f_review_orders_tv_orderCategory"></string>
+    <string name="str_f_review_orders_tv_orderStatus"></string>
+    <string name="str_f_review_orders_btn_ReviewOrdersNeedApprovalMore">More...</string>
+    <string name="str_f_review_orders_btn_ReviewOrdersRePublish">Republish</string>
+    <string name="str_f_review_orders_tv_NoCurrentOrders">No current orders yet</string>
+    <string name="str_f_review_orders_addorder">+ Add new order</string>
+
+
+    <!-- fragment_place_order_form -->
+    <string name="str_f_place_order_form_et_CustomerOrderProductName">Order name</string>
+    <string name="str_f_place_order_form_et_CustomerOrderProductDetails">Order details</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductImageTitle">Choose Product Image (If Any)</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategoryTitle">Choose Category</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory1">Restaurant</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory2">Pastry</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory3">Grocery</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory4">Stationary</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory5">Clothes</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory6">Houseware</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory7">Pharmacy</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory8">Beauty</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory9">Others</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductCategory10">Electronics</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductDeliveryPriceTitle">Delivery price</string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductItemPriceTitle">Item price</string>
+    <string name="str_f_place_order_form_tv_PlaceOrderFormTotalPrice">Total Price: </string>
+    <string name="str_f_place_order_form_tv_CustomerOrderProductSourceLocationTitle">Please add a Delivery location below by long press on the map</string>
+    <string name="str_f_place_order_form_btn_CustomerOrderPlaceOrder">Publish Order</string>
+    <string name="str_f_place_order_form_btn_CustomerOrderDiscardOrder">Discard Order</string>
+    <string name="str_f_place_order_form_btn_addloc">Search more locations</string>
+
+
+    <!-- About us fragment -->
+    <string name="str_f_aboutus_story">
+
+        AlMersal is an on-demand delivery mobile application that allows customers to request anything from the market or individuals to be delivered to their locations in an easy and safe steps. Customers can track their orders and know their status automatically.
+
+    </string>
+
+    <!-- Scene Splash -->
+    <string name="str_settings">Settings</string>
+    <string name="str_ordersHistory">Orders History</string>
+    <string name="str_Wallet">Wallet</string>
+    <string name="str_offers">Offers</string>
+    <string name="str_updateprofile">Update Profile</string>
+    <string name="str_updateprofileinfo">Update Profile Info</string>
+    <string name="str_LiveChatSupport">Live Support Chat</string>
+    <string name="str_AboutUs">About us</string>
+    <string name="str_BlockedDrivers">Blocked Drivers</string>
+    <string name="str_Sharemersal">Share mersal</string>
+    <string name="str_DriverOrdersHistory">Driver Orders History</string>
+    <string name="str_Login">Login</string>
+    <string name="str_ChangeUserType">Change User Type</string>
+    <string name="str_BlockedCustomers">Blocked Customers</string>
+    <string name="str_driver_home">driver_home</string>
+    <string name="str_customer_home">customer_home</string>
+
+
+    <!-- Driver order summary -->
+    <string name="str_PleaseRateThisCustomer">PLEASE RATE CUSTOMER</string>
+    <string name="str_StatusDelievered">DELIEVERED</string>
+    <string name="str_Rate">Rate</string>
+    <string name="str_Block">Block</string>
+
+
+    <!-- Driver current accepted order -->
+
+    <string name="str_CallCustomer">Call Customer</string>
+    <string name="str_StartNavigation">Start navigation</string>
+
+    <!-- Driver's single order fragment -->
+    <string name="str_detailedOrderFragment">Detailed Order Info</string>
+
+
+    <!-- All Dialogues Texts here -->
+    <string name="str_authenticating_user">Authenticating user...</string>
+    <string name="str_processing">Processing...</string>
+    <string name="str_fetching_order">Fetching Orders...</string>
+    <string name="str_fetching_drivers">Fetching drivers...</string>
+    <string name="str_loading">Loading...</string>
+    <string name="str_authenticating_twitter_user">Authenticating twitter user...</string>
+    <string name="str_authenticating_facebook_user">Authenticating Facebook user...</string>
+    <string name="str_initializing_database">Initializing Database...</string>
+    <string name="str_changing_status">Changing status..</string>
+    <string name="str_processing_order">Processing order...</string>
+    <string name="str_processing_drivers">Processing drivers...</string>
+    <string name="str_logging_out">logging out...</string>
+    <string name="str_initializing_map">initializing map...</string>
+    <string name="str_getting_list">Getting list...</string>
+    <string name="str_unblocking_user">Unblocking user...</string>
+    <string name="str_getting_history">Getting history...</string>
+    <string name="str_republishing_order">Republishing order...</string>
+    <string name="str_cancelling_order">Cancelling order...</string>
+    <string name="str_updating_to_server">Update to server...</string>
+    <string name="str_retrieving_info">Retrieving Information...</string>
+    <string name="str_please_wait">Please wait...</string>
+
+    <!-- All Dialogues Titles Texts here -->
+
+    <string name="str_wanttodeleteorder">Do you want to cancel the order?</string>
+    <string name="str_wanttodeleteorder1">If you confirm, order will be cancel</string>
+    <string name="str_wanttoleavescren">Do you want to leave this screen?</string>
+    <string name="str_wantToLogout">Do you want to logout?</string>
+    <string name="str_wantToCancelOrder">Do you want to cancel order?</string>
+    <string name="str_wantToExitApp">Do you want to exit application?</string>
+    <string name="str_WhatToDo">What you would like to do?</string>
+    <string name="str_turnOnGPS">Please turn on GPS!</string>
+    <string name="str_YourOrderIsIn">Your order status is:  </string>
+    <string name="str_state">state </string>
+    <string name="str_confirm_order_cancellation">Confirm order cancellation </string>
+
+
+    <string name="str_NeedApprovalState">Looking for mersal</string>
+    <string name="str_ProcessingState">Mersal Going to pickup location</string>
+    <string name="str_PickedState">Mersal Going to your location</string>
+    <string name="str_DeliveredState">Order is delivered</string>
+    <string name="str_UnAttendedState">No one picked your order, please increase the delivery price</string>
+    <string name="str_CancelledState">Driver cancels your ongoing order.</string>
+
+
+    <string name="str_UserNotVerified">User not verified</string>
+    <string name="str_TrialPeriodExpired">Your trial period is expired. Plase visit our office to verify yourself. Thank you !</string>
+    <string name="str_AccountBlockedWarning">Your account is blocked by admin, please contact support center.</string>
+    <string name="str_PicturesNoteverifiedWarning">Your pictures are not verified, please update pictures again</string>
+    <string name="str_VideoNotVerifiedWarning">Your video is not clear. Please record and upload again</string>
+    <string name="str_UploadPicturesAgain">Upload Pictures Again</string>
+    <string name="str_UploadvideoAgain">Upload Video Again</string>
+    <string name="str_VideoRejectionAlert">Your video is rejected by admin due to this reason: </string>
+    <string name="str_orderCancelled">Order Cancelled</string>
+    <string name="str_cancelOrder">Cancel Order</string>
+
+
+    <string name="str_confirm">Confirm</string>
+    <string name="str_goBackToOrdersScreen">Go Back to Orders Screen</string>
+    <string name="str_Modify">Modify</string>
+    <string name="str_ChangeDriver">Change Driver</string>
+    <string name="str_Delete">Delete</string>
+
+
+    <string name="str_exit">Exit</string>
+    <string name="str_updatepics">Update Pictures</string>
+    <string name="str_recordvideo">Record Video</string>
+    <string name="str_no">No</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_help">Help</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_ok">OK</string>
+    <string name="str_sr">Sr</string>
+    <string name="str_mins">mins</string>
+    <string name="str_km">Km</string>
+    <string name="str_stars">Stars</string>
+    <string name="str_all">All</string>
+
+
+    <!-- pop message -->
+    <string name="str_PleaseEnterVerificationCode">Please Enter Verification Code</string>
+    <string name="str_PleaseEnableAllPermissions">Please enable all required permissions</string>
+    <string name="str_EnterCodeHere">Enter Code Here</string>
+    <string name="str_Verify">Verify</string>
+    <string name="str_btn_settings">Settings</string>
+
+
+    <!-- mobile number pop message -->
+    <string name="str_PleaseEnterMobileNumber">597272727</string>
+    <string name="str_UpdatePhoneNumber">Update Phone Number</string>
+
+
+    <!-- Common strings -->
+    <string name="str_order_name">Order name</string>
+    <string name="str_item_price">Item(s) price</string>
+    <string name="str_deliverey_price">Del. price</string>
+    <string name="str_awarded_price">Awarded price</string>
+    <string name="str_order_status">Order status</string>
+    <string name="str_category">Category</string>
+    <string name="str_order_details">Order Details</string>
+    <string name="str_driver_name">Driver name</string>
+    <string name="str_driver_mob">Driver Mob.</string>
+    <string name="str_rating">Rating</string>
+    <string name="str_timer">Timer</string>
+    <string name="str_address">Address</string>
+    <string name="str_name">Name</string>
+    <string name="str_rate_count">| Rated by: </string>
+    <string name="str_plus">+</string>
+    <string name="str_minus">-</string>
+    <string name="str_block_reason">Block Reason</string>
+    <string name="str_noOrdersList">No ongoing orders</string>
+
+
+    <!-- Update profile -->
+    <string name="str_old_password">Old password</string>
+    <string name="str_new_password">New password</string>
+    <string name="str_confirm_new_password">Confirm new password</string>
+    <string name="str_update_profile">Save changes</string>
+
+    <!-- fragment_settings -->
+    <string name="str_fragment_settings_tv_SettingSetWaitTimeTitle">Set pubishing time</string>
+    <string name="str_fragment_settings_tv_WaitTime">1 mins</string>
+    <string name="str_btn_language">English/عربي</string>
+    <string name="str_fragment_settings_tv_language">Change language</string>
+    <string name="str_fragment_settings_tv_SettingLanguage">English</string>
+    <string name="str_fragment_settings_tv_SettingLanguageEng">English</string>
+    <string name="str_fragment_settings_tv_SettingLanguageAr">عربي</string>
+    <string name="str_fragment_settings_tv_SettingCustomerRatingMoreThan">Customer rating not less than</string>
+    <string name="str_fragment_settings_tv_SettingFareMoreThan">Fare more than</string>
+    <string name="str_fragment_settings_tv_SettingDistanceLessThan">Within distance radius area</string>
+    <string name="str_fragment_settings_tv_SettingCustomerRating">0 Stars</string>
+    <string name="str_fragment_settings_tv_SettingFare">15 Sr</string>
+    <string name="str_fragment_settings_tv_SettingOrderPrice">0 Sr</string>
+    <string name="str_fragment_settings_tv_SettingDistanceRadius">1 Km</string>
+    <string name="str_fragment_settings_btn_SettingBack">Close</string>
+    <string name="str_fragment_settings_tv_SettingCustomerWithinSourceDistanceRadiusArea">Driver within distance radius area</string>
+    <string name="str_fragment_settings_tv_SettingDeliveryPriceMoreThan">Delivery price not less than</string>
+    <string name="str_fragment_settings_tv_SettingOrderPriceMoreThan">Product price not more than</string>
+    <string name="str_fragment_settings_tv_SettingDriverWithinDestinationDistanceRadiusArea">Customer within destination distance radius area</string>
+    <string name="str_fragment_settings_tv_SettingDriverWithinSourceDistanceRadiusArea">Customer within source distance radius area</string>
+    <string name="str_fragment_settings_5mins">3 mins</string>
+    <string name="str_fragment_settings_ChangeLanguageMsgEn">Changes will take effect, after closing application</string>
+    <string name="str_fragment_settings_ChangeLanguageMsgAr">سيتم تحديث اللغه بعد اغلاق التطبيق</string>
+
+
+    <!-- block user remarks dialog -->
+
+    <string name="str_selectBlockReason">Please select blocking reason</string>
+    <string name="str_selectCancelReason">Order Cancel</string>
+    <string name="str_delayInOrder">Delay in order</string>
+    <string name="str_delayInRecievingOrder">Delay in receiving order</string>
+    <string name="str_rudeBehaviour">Rude Behaviour</string>
+    <string name="str_otherReasons">Other Reasons</string>
+    <string name="str_enterOtherReasonsHere">Enter other reasons here</string>
+    <string name="str_typeCancelReason">Type reason of cancelling order</string>
+    <string name="str_orderDamaged">Order is not correct</string>
+    <string name="str_orderNotInGoodCondition">Order is damaged</string>
+    <string name="str_BlockOtherReason">Other Reason:</string>
+
+    <string name="str_noBlockListAvailable">List empty</string>
+
+
+    <!-- All Toasts Texts here -->
+
+    <string name="str_rateCustomerToLogout">Please rate this customer, to Logout!</string>
+    <string name="str_cancelOrderFirst">Order is in published state. Cancel it first</string>
+    <string name="str_finsihFirsttogoback">Please finish this order first to go back!</string>
+    <string name="str_finsihFirsttologout">Please finish ongoing order first, to Logout!</string>
+    <string name="str_rateFirstToFInishOrder">Please rate first to finish this order!</string>
+    <string name="str_incorrectcode">Code is incorrect, Please enter valid code</string>
+    <string name="str_fieldsempty">One or more fields are empty</string>
+    <string name="str_passwordnotmatch">Password not matched</string>
+    <string name="str_invalidemailformat">Email is not in valid format</string>
+    <string name="str_phonenotvalid">Mobile number is not in valid format</string>
+    <string name="str_passowordalphanumeric">Password should only contains alphabets and numbers</string>
+    <string name="str_attachpictures">Please attach all pictures</string>
+    <string name="str_entercodefirst">Please enter code first</string>
+    <string name="str_nolocation">No location detetcted</string>
+    <string name="str_errorPostingfacebook">Error Posting facebook</string>
+    <string name="str_errorLoginfacebook">Error Login facebook</string>
+    <string name="str_sorryDriverChanged">Sorry, Customer wants to change the driver</string>
+    <string name="str_cancelledOrderByCustomer">Your order has been Cancelled by Customer</string>
+    <string name="str_cancelledOrderByAdmin">Your order has been Cancelled by Admin</string>
+    <string name="str_alreadyaccepted">This order is not available anymore</string>
+    <string name="str_emailnotvalid">Not a valid email</string>
+    <string name="str_wrongid">Wrong Id</string>
+    <string name="str_nouserfound">No User Found!</string>
+    <string name="str_notverified">Not Verified</string>
+    <string name="str_trialperiodmsg">Your trial period is expired. Plase visit our office to verify yourself. Thank you !</string>
+    <string name="str_enterordername">Enter order name</string>
+    <string name="str_enterorderdetails">Enter order details</string>
+    <string name="str_choosecategory">Please choose one category</string>
+    <string name="str_item_price_error">Enter item price</string>
+    <string name="str_del_loc_error">Please choose delivery location</string>
+    <string name="str_del_price_error">Enter deliverey price more than estimated price</string>
+    <string name="str_errorpickingplace">Error occurred while picking location. Please try again</string>
+    <string name="str_nolocationpicked">No item location picked</string>
+    <string name="str_UnblockedSuccessfuly">Unblocked Successfuly</string>
+    <string name="str_ErrorOccuredTryAgain">Error occurred, Please try again !</string>
+    <string name="str_EnterCorrectCode">Please enter correct code</string>
+    <string name="str_TwitterSessionExpired">Twitter session expired. Try Again!</string>
+    <string name="str_FacebookSessionExpired">Facebook session expired. Try Again!</string>
+    <string name="str_welcome">Welcome</string>
+    <string name="str_refreshHistoryList">Error retrieving History - Swipe down to refresh list</string>
+    <string name="str_maxValueReached">Max value reached</string>
+    <string name="str_minValueReached">Min value reached</string>
+
+
+    <string name="str_vdorecordedsuccessfuly">Video recorded successfuly</string>
+    <string name="str_vdouploadedsuccessfuly">Video uploaded successfuly</string>
+    <string name="str_vdouapprovedshortly">Your video will be approved shortly</string>
+    <string name="str_infoupdatedsuccessfuly">Information updated successfuly !</string>
+    <string name="str_updateallinfowarning">Please update all information</string>
+
+
+    <string name="facebook_app_id" translatable="false">1767746286782648</string>
+
+    <string name="runtime_permissions_txt">Please enable all permissions from app settings.</string>
+    <string name="str_waitingtimelabel">Waiting for final confirmation from customer</string>
+
+    <string name="str_pleaseenterreason">Please enter some reason</string>
+    <string name="title_activity_help_wizard">HelpWizardActivity</string>
+
+    <string name="str_codemobilenumber">Code has been sent to</string>
+    <string name="str_codemobilenumbertitle">Code will be sent to</string>
+    <string name="str_entercode">Please verify the below number, and press Get code button</string>
+    <string name="str_getcodeagain">Get code again</string>
+    <string name="str_changenumber">Change number</string>
+    <string name="str_getcode">Get code</string>
+
+
+    <!-- help screen texts -->
+    <string name="str_txtblue">The blue color means the driver is going to the pickup location</string>
+    <string name="str_txtyellow">The yellow color means the driver picked the order , going to your location</string>
+    <string name="str_txtgreen">The green color means driver successfully delivered the order</string>
+    <string name="str_txtred">The red color means the order is canceled</string>
+    <string name="str_txtorange">The orange color means the order is waiting for any driver\'s approval</string>
+
+
+    <!-- New translations -->
+    <string name="str_alert">Alert !</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+
+    <string name="str_categorytitle">Select one of the categories below</string>
+    <string name="str_detailstitle">Write down the details of your order</string>
+    <string name="str_itemtitle">Give some title to this order</string>
+    <string name="str_itempricetitle">Order price</string>
+    <string name="str_picturetitle">Select product picture (optional)</string>
+    <string name="str_delpricetitle">Add an extra deliverey price \n(optional)</string>
+    <string name="str_estprice">Est. price</string>
+    <string name="str_esttime">Est. time</string>
+    <string name="str_estdistance">Distance</string>
+    <string name="str_stepcount">Order steps</string>
+    <string name="str_itemhint">e.g. Pizza party</string>
+    <string name="str_detailshint">e.g. 2 large fajita, 1 medium cheese pizza etc.</string>
+    <string name="str_itempricehint">e.g. 395 Sr</string>
+    <string name="str_delpricehint">e.g. 20</string>
+
+    <string name="str_uploadvideotitle">Please say below message with\n your face video to verify yourself</string>
+    <string name="str_cancelorderwarning">You can cancel the order till the end of this timer</string>
+    <string name="str_PleaseEnterMobileNumbertitle">Please enter mobile number</string>
+
+
+    <!-- Help slides text -->
+    <string name="str_helptitle1">Getting orders</string>
+    <string name="str_helptitle2">View order details</string>
+    <string name="str_helptitle3">Accepted order info</string>
+    <string name="str_helptitle4">Rating customer</string>
+    <string name="str_helptitle5">Setting filter criteria</string>
+    <string name="str_helptitle6">Placing an order</string>
+    <string name="str_helptitle7">Finalize the order</string>
+    <string name="str_helptitle8">Waiting for approval</string>
+    <string name="str_helptitle9">Order Approved</string>
+    <string name="str_helptitle10">Order Delivered</string>
+    <string name="str_helptitle11">Setting filter criteria</string>
+
+    <string name="str_helpdetail1">Getting an order was never been so easy before</string>
+    <string name="str_helpdetail2">Get order details by just clicking on order icon over the map</string>
+    <string name="str_helpdetail3">Notify the customer, when you picked up the order item</string>
+    <string name="str_helpdetail4">Rate the customer after delivering the order</string>
+    <string name="str_helpdetail5">Set a combination of filters, to show only those orders on the screen which you want</string>
+    <string name="str_helpdetail6">You can place an order just in a few simple steps by providing some basic details</string>
+    <string name="str_helpdetail7">Item will be delivered to your current location, you can search and choose item location from the map</string>
+    <string name="str_helpdetail8">Order is published and waiting for approval from the driver who is intrested to take this order</string>
+    <string name="str_helpdetail9">Order is approved and still need a final confirmation from you to process it</string>
+    <string name="str_helpdetail10">Rate the driver after receiving the order</string>
+    <string name="str_helpdetail11">Set preferences according to your need</string>
+
+    <string name="str_wrongphonenum">Phone number is not valid. Enter the correct one</string>
+    <string name="str_status_label">Status</string>
+
+    <string name="str_btn_driver">Driver</string>
+    <string name="str_btn_mersal">Mersal</string>
+    <string name="str_btn_customer">Customer</string>
+
+
+    <string name="str_title">Order title</string>
+
+
+    <!-- FINALIZED STRINGS -->
+    <string name="str_list_of">List of</string>
+    <string name="str_blocked_users">BLOCKED USERS</string>
+
+    <string name="str_order">order</string>
+    <string name="str_details">details</string>
+
+    <string name="str_cust_confirmation">Waiting for \ncustomer final confirmation</string>
+    <string name="str_status">STATUS</string>
+
+    <string name="str_history_items">HISTORY ITEMS</string>
+    <string name="str_removepicture">Remove picture</string>
+    <string name="str_filenotexist">File not exists</string>
+
+
+    <string name="str_gettingroute">Getting Route</string>
+    <string name="str_item_location">Item location</string>
+    <string name="str_destination_location">Destination location</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_closed">Closed</string>
+    <string name="str_searching_drivers">Searching for drivers..</string>
+    <string name="str_sharetext">Share Al-mersal!</string>
+
+
+    <string name="str_freeordertext" formatted="false">This is a free delivery order, you will take %1$d Sr from the customer, and we will reward you %2$d Sr for this delivery</string>
+    <string name="str_freeordertextCus" formatted="false">Welcome to al-mersal! \nAs a curtesy we reward you %1$d Sr. \nFor items and goods, we will charge from you. \nThank you!</string>
+    <string name="str_freeorderpopup1">Please note that you have exceeded the delivery free amount, now you will pay the extra charges to the driver</string>
+
+
+    <string name="str_btnRedeem">Redeem</string>
+    <string name="str_updatinginfo">Updating information...</string>
+    <string name="str_redeemerror">You cannot redeem amount which is below 20 Sr</string>
+
+    <string name="str_Amount">Amount</string>
+    <string name="str_OrdersCount">Orders count</string>
+    <string name="str_RedeemDate">Date Redeemd</string>
+
+    <string name="str_AccountHolderName">Account holder full name</string>
+    <string name="str_BankName">Bank name</string>
+    <string name="str_BranchName">Bank branch address</string>
+    <string name="str_IbanNumber">24 Digits IBAN Number</string>
+    <string name="str_btn_submitiban">Submit</string>
+
+    <string name="str_wallet_title1">My</string>
+    <string name="str_wallet_title2">Wallet</string>
+    <string name="str_delivered_orders_label">Free Orders To Redeem</string>
+    <string name="str_total_balance">Total Rewarded Amount</string>
+    <string name="str_transactions">Transactions</string>
+
+    <string name="str_customer_offers_title1">My</string>
+    <string name="str_customer_offers_title2">Offers</string>
+    <string name="str_customer_offers_offer">Finish 5 orders and get a discount on 6th order</string>
+    <string name="str_customer_offers_warning">Congratulations! your next order is free</string>
+
+    <string name="str_iban_title1">Bank</string>
+    <string name="str_iban_title2">info</string>
+    <string name="str_trackdriver">Track my driver >>></string>
+    <string name="str_bankinfo">Bank info</string>
+
+    <string name="str_free">Free</string>
+    <string name="str_ordrStatusNow">order status now:</string>
+
+    <string name="str_TwiterFBText" formatted="false">I ordered %1$s, My order delivered by %2$s in al-mersal app, must try it once.</string>
+    <string name="str_TwiterFBTextDriver">I just made additional money through al-mersal app. Be a mersal and start earning too.</string>
+    <string name="str_cust_waiting_end">Congratulations! \nCustomer has confirmed this order. \nPlease proceed.</string>
+
+    <string name="str_cannot_repopulate">There is an order already in the que. please delete it first</string>
+
+
+    <string-array name="users_array">
+        <item>Ehtisham</item>
+        <item>Mohammad</item>
+        <item>Kattan</item>
+        <item>Hassan</item>
+        <item>Tariq</item>
+    </string-array>
+
+</resources>
