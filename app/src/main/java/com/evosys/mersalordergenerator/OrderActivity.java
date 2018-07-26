@@ -1,21 +1,14 @@
 package com.evosys.mersalordergenerator;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.location.Location;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-
-import com.android.volley.toolbox.Volley;
 import com.evosys.mersalordergenerator.adapter.DBAdapter;
 import com.evosys.mersalordergenerator.definition.GlobalClass;
 import com.evosys.mersalordergenerator.helperclasses.PubNubClass;
@@ -684,7 +677,7 @@ public class OrderActivity extends AppCompatActivity {
         object.setPermission(permissions);
 
 
-        QBCustomObjects.createObject(object, new QBEntityCallback<QBCustomObject>() {
+        QBCustomObjects.createObject(object).performAsync(new QBEntityCallback<QBCustomObject>() {
             @Override
             public void onSuccess(final QBCustomObject createdObject, Bundle params) {
 
@@ -767,28 +760,28 @@ public class OrderActivity extends AppCompatActivity {
         //final ProgressDialog loading = ProgressDialog.show(this, GetStringFromResource(R.string.str_gettingroute), GetStringFromResource(R.string.str_please_wait), false, false);
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        //loading.dismiss();
-                        //Calling the method drawPath to draw the path
-                        Log.d("URLRes", response);
-                        drawPath(response, objOrderDetailsModel);
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        //loading.dismiss();
-                        Toast.makeText(getApplicationContext(), "Error getting estimated values", Toast.LENGTH_LONG).show();
-                        DialogsUtils.getInstance().RemoveLoadingDialog();
-                    }
-                });
-
-        //Adding the request to request queue
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        requestQueue.add(stringRequest);
+//        StringRequest stringRequest = new StringRequest(url,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        //loading.dismiss();
+//                        //Calling the method drawPath to draw the path
+//                        Log.d("URLRes", response);
+//                        drawPath(response, objOrderDetailsModel);
+//                    }
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        //loading.dismiss();
+//                        Toast.makeText(getApplicationContext(), "Error getting estimated values", Toast.LENGTH_LONG).show();
+//                        DialogsUtils.getInstance().RemoveLoadingDialog();
+//                    }
+//                });
+//
+//        //Adding the request to request queue
+//        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+//        requestQueue.add(stringRequest);
     }
 
 

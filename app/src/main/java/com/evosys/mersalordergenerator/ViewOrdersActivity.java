@@ -59,7 +59,7 @@ public class ViewOrdersActivity extends AppCompatActivity {
         requestBuilder.or("user_id", "", "", "");
         requestBuilder.or("orderStatus", "InProcess", "Delivered", "Picked", "Closed", "NeedApproval", "UnAttended", "Cancelled");
 
-        QBCustomObjects.getObjects("order", requestBuilder, new QBEntityCallback<ArrayList<QBCustomObject>>() {
+        QBCustomObjects.getObjects("order", requestBuilder).performAsync(new QBEntityCallback<ArrayList<QBCustomObject>>() {
             @Override
             public void onSuccess(ArrayList<QBCustomObject> customObjects, Bundle params) {
 

@@ -1,8 +1,8 @@
 package com.evosys.mersalordergenerator;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -15,10 +15,8 @@ import com.evosys.mersalordergenerator.definition.GlobalClass;
 import com.evosys.mersalordergenerator.helperclasses.PubNubClass;
 import com.evosys.mersalordergenerator.model.UserModel;
 import com.evosys.mersalordergenerator.utils.DialogsUtils;
-import com.quickblox.auth.QBAuth;
-import com.quickblox.auth.model.QBSession;
+import com.quickblox.auth.session.QBSettings;
 import com.quickblox.core.QBEntityCallback;
-import com.quickblox.core.QBSettings;
 import com.quickblox.core.exception.QBResponseException;
 import com.quickblox.core.request.QBRequestGetBuilder;
 import com.quickblox.customobjects.QBCustomObjects;
@@ -70,26 +68,29 @@ public class MainActivity extends AppCompatActivity {
         QBSettings.getInstance().init(getApplicationContext(), GlobalClass.APP_ID, GlobalClass.AUTH_KEY, GlobalClass.AUTH_SECRET);
         QBSettings.getInstance().setAccountKey(GlobalClass.ACCOUNT_KEY);
 
-        QBAuth.createSession(new QBEntityCallback<QBSession>() {
-            @Override
-            public void onSuccess(QBSession session, Bundle params) {
-                btn_Login.setEnabled(true);
-                DialogsUtils.getInstance().RemoveLoadingDialog();
-            }
+        btn_Login.setEnabled(true);
+        DialogsUtils.getInstance().RemoveLoadingDialog();
 
-            @Override
-            public void onError(QBResponseException error) {
-                // errors
-                Toast.makeText(getApplicationContext(), "Database not connected - reload app again", Toast.LENGTH_SHORT).show();
-                DialogsUtils.getInstance().RemoveLoadingDialog();
-            }
-        });
+//        QBAuth.createSession(new QBEntityCallback<QBSession>() {
+//            @Override
+//            public void onSuccess(QBSession session, Bundle params) {
+//                btn_Login.setEnabled(true);
+//                DialogsUtils.getInstance().RemoveLoadingDialog();
+//            }
+//
+//            @Override
+//            public void onError(QBResponseException error) {
+//                // errors
+//                Toast.makeText(getApplicationContext(), "Database not connected - reload app again", Toast.LENGTH_SHORT).show();
+//                DialogsUtils.getInstance().RemoveLoadingDialog();
+//            }
+//        });
     }
 
     private void PerformLogin()
     {
         DialogsUtils.getInstance().ShowLoadingDialog(GetStringFromResource(R.string.str_Login));
-        QBUsers.signIn(GlobalClass.UserCredentials(GetSelectedUser().getUserName(), GetSelectedUser().getPassowrd()), new QBEntityCallback<QBUser>() {
+        QBUsers.signIn(GlobalClass.UserCredentials(GetSelectedUser().getUserName(), GetSelectedUser().getPassowrd())).performAsync(new QBEntityCallback<QBUser>() {
             @Override
             public void onSuccess(QBUser qbUser, Bundle bundle) {
                 DialogsUtils.getInstance().RemoveLoadingDialog();
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         QBRequestGetBuilder requestBuilder = new QBRequestGetBuilder();
         requestBuilder.eq("user_id", UserId);
 
-        QBCustomObjects.getObjects("customers", requestBuilder, new QBEntityCallback<ArrayList<QBCustomObject>>() {
+        QBCustomObjects.getObjects("customers", requestBuilder).performAsync(new QBEntityCallback<ArrayList<QBCustomObject>>() {
             @Override
             public void onSuccess(ArrayList<QBCustomObject> customObjects, Bundle params) {
 

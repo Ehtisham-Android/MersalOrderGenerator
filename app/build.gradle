@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     repositories {
         maven {
@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.evosys.mersalordergenerator"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -30,27 +30,29 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-
-    compile("com.quickblox:quickblox-android-sdk-chat:2.6.1") {
-        transitive = true
-    }
-
     compile group: 'com.pubnub', name: 'pubnub-gson', version: '4.3.0'
 
     compile 'com.mcxiaoke.volley:library-aar:1.0.0'
-    compile 'com.quickblox:quickblox-android-sdk-core:2.6.1'
-    compile 'com.quickblox:quickblox-android-sdk-customobjects:2.6.1'
-    compile 'com.quickblox:quickblox-android-sdk-content:2.6.1'
-    compile 'com.quickblox:quickblox-android-sdk-messages:2.6.1'
-    compile 'com.google.android.gms:play-services-places:10.2.1'
-    compile 'com.google.android.gms:play-services-location:10.2.1'
-    compile 'com.google.android.gms:play-services-gcm:10.2.1'
-    compile 'com.google.android.gms:play-services-maps:10.2.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
+
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:27.1.1'
+
+    compile 'com.quickblox:quickblox-android-sdk-core:3.7.0'
+    compile 'com.quickblox:quickblox-android-sdk-customobjects:3.7.0'
+    compile 'com.quickblox:quickblox-android-sdk-content:3.7.0'
+    compile 'com.quickblox:quickblox-android-sdk-messages:3.7.0'
+    compile 'com.quickblox:quickblox-android-sdk-chat:3.7.0'
+
+
+    //noinspection GradleCompatible
+    compile 'com.google.android.gms:play-services-places:15.0.1'
+    compile 'com.google.android.gms:play-services-location:15.0.1'
+    compile 'com.google.android.gms:play-services-gcm:15.0.1'
+    compile 'com.google.android.gms:play-services-maps:15.0.1'
+
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:support-v4:27.1.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

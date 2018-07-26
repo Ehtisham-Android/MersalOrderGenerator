@@ -1,6 +1,7 @@
 package com.evosys.mersalordergenerator.utils;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentUris;
 import android.content.Context;
@@ -16,7 +17,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -489,7 +489,7 @@ public class DialogsUtils {
 
         //event.setMessage(objJSONObject.toString());
 
-        QBPushNotifications.createEvent(event, new QBEntityCallback<QBEvent>() {
+        QBPushNotifications.createEvent(event).performAsync(new QBEntityCallback<QBEvent>() {
             @Override
             public void onSuccess(QBEvent qbEvent, Bundle args) {
                 // sent
@@ -520,7 +520,7 @@ public class DialogsUtils {
         data.put("data.type", "Mersal");
         event.setMessage(data);
 
-        QBPushNotifications.createEvent(event, new QBEntityCallback<QBEvent>() {
+        QBPushNotifications.createEvent(event).performAsync(new QBEntityCallback<QBEvent>() {
             @Override
             public void onSuccess(QBEvent qbEvent, Bundle args) {
                 // sent
